@@ -1,0 +1,8 @@
+setup.py
+src/mini_data_project/__init__.py
+src/mini_data_project/data_analysis.py
+src/mini_data_project.egg-info/PKG-INFO
+src/mini_data_project.egg-info/SOURCES.txt
+src/mini_data_project.egg-info/dependency_links.txt
+src/mini_data_project.egg-info/top_level.txt
+tests/test_data_analysis.py

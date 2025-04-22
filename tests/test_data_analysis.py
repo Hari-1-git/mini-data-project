@@ -1,6 +1,7 @@
 import pytest
 import pandas as pd
-from mini_data_project.data_analysis import load_sales, total_sales, average_sales
+from mini_data_project.data_analysis import load_sales, total_sales, average_sales, median_sales
+
 
 @pytest.fixture
 def sample_df(tmp_path):
@@ -17,3 +18,7 @@ def test_total_sales(sample_df):
 
 def test_average_sales(sample_df):
     assert average_sales(sample_df) == 15
+def test_median_sales(sample_df):
+    # sample_df has [10,20] → median is 15
+    assert median_sales(sample_df) == 15
+

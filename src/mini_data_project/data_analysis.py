@@ -17,6 +17,10 @@ def total_sales(df: pd.DataFrame) -> float:
 def average_sales(df: pd.DataFrame) -> float:
     """Return average monthly sales."""
     return float(df["sales"].mean())
+def median_sales(df):
+    """Return the median monthly sales."""
+    return float(df["sales"].median())
+
 
 def plot_sales(df: pd.DataFrame):
     """Plot monthly sales."""
